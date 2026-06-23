@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import poolImg from '../../public/image/kolam renang.jpeg';
 
 export default function Skills() {
     return (
@@ -34,7 +35,7 @@ export default function Skills() {
                     </div>
                 </div>
                 <div className="skills-image">
-                    <Image src="/image/ruang keluarga.jpeg" alt="Detail Interior" width={600} height={400} style={{ objectFit: 'cover' }} />
+                    <Image src={poolImg} alt="Interior Kustom" className="main-img" style={{ objectFit: 'cover' }} />
                 </div>
             </div>
         </section>

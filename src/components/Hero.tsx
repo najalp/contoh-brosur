@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import heroImg from '../../public/image/ruang keluarga.jpeg';
 
 export default function Hero() {
     return (
@@ -19,7 +20,7 @@ export default function Hero() {
                     </div>
                 </div>
                 <div className="hero-image-wrapper">
-                    <Image src="/image/ruang keluarga.jpeg" alt="Interior Modern" className="hero-img" width={800} height={500} style={{ objectFit: 'cover' }} priority />
+                    <Image src={heroImg} alt="Interior Modern" className="hero-img" style={{ objectFit: 'cover' }} priority />
                 </div>
             </div>
         </header>

@@ -2,6 +2,8 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
+import aboutImg from '../../public/image/ruang tamu.jpeg';
+import checkImg from '../../public/image/tampak depan.jpeg';
 
 export default function About() {
     const [activeTab, setActiveTab] = useState('Spesifikasi');
@@ -10,7 +12,7 @@ export default function About() {
         <section className="about section-padding">
             <div className="container about-container">
                 <div className="about-image">
-                    <Image src="/image/ruang tamu.jpeg" alt="Tentang Interior" className="main-img" width={600} height={400} style={{ objectFit: 'cover' }} />
+                    <Image src={aboutImg} alt="Tentang Interior" className="main-img" style={{ objectFit: 'cover' }} />
                 </div>
                 <div className="about-content">
                     <span className="section-subtitle">Tentang Properti</span>
@@ -33,7 +35,7 @@ export default function About() {
                                 </ul>
                             </div>
                             <div className="tab-img-wrap">
-                                <Image src="/image/kamar.jpeg" alt="Tab Arsitektur" width={150} height={150} style={{ objectFit: 'cover' }} />
+                                <Image src={checkImg} alt="Kualitas" className="tab-img" style={{ objectFit: 'cover' }} />
                             </div>
                         </div>
                     </div>

@@ -1,5 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import terasImg from '../../public/image/teras.jpeg';
+import tanggaImg from '../../public/image/tangga ke lanati 2.jpeg';
+import musholaImg from '../../public/image/mushola.jpeg';
+import depanImg from '../../public/image/depan samping.jpeg';
 
 export default function Services() {
     return (
@@ -10,7 +14,7 @@ export default function Services() {
                 
                 <div className="service-grid">
                     <div className="service-card">
-                        <Image src="/image/teras.jpeg" alt="Teras Nyaman" className="service-img" width={300} height={250} />
+                        <Image src={terasImg} alt="Teras Nyaman" className="service-img" style={{ objectFit: 'cover' }} />
                         <div className="service-info">
                             <div className="service-icon"><i className="ph-light ph-armchair"></i></div>
                             <div className="service-text">
@@ -20,7 +24,7 @@ export default function Services() {
                         </div>
                     </div>
                     <div className="service-card">
-                        <Image src="/image/tangga ke lanati 2.jpeg" alt="Interior Luas" className="service-img" width={300} height={250} />
+                        <Image src={tanggaImg} alt="Interior Luas" className="service-img" style={{ objectFit: 'cover' }} />
                         <div className="service-info">
                             <div className="service-icon"><i className="ph-light ph-stairs"></i></div>
                             <div className="service-text">
@@ -30,7 +34,7 @@ export default function Services() {
                         </div>
                     </div>
                     <div className="service-card">
-                        <Image src="/image/mushola.jpeg" alt="Fasilitas Mushola" className="service-img" width={300} height={250} />
+                        <Image src={musholaImg} alt="Fasilitas Mushola" className="service-img" style={{ objectFit: 'cover' }} />
                         <div className="service-info">
                             <div className="service-icon"><i className="ph-light ph-star"></i></div>
                             <div className="service-text">
@@ -40,7 +44,7 @@ export default function Services() {
                         </div>
                     </div>
                     <div className="service-card">
-                        <Image src="/image/depan samping.jpeg" alt="Fasad Modern" className="service-img" width={300} height={250} />
+                        <Image src={depanImg} alt="Fasad Modern" className="service-img" style={{ objectFit: 'cover' }} />
                         <div className="service-info">
                             <div className="service-icon"><i className="ph-light ph-buildings"></i></div>
                             <div className="service-text">
